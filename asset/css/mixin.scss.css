@@ -1,0 +1,76 @@
+/*---------mixin------------------*/
+@mixin border-radius($radius) {
+ -webkit-border-radius: $radius;
+ -moz-border-radius: $radius;
+ -ms-border-radius: $radius;
+ -o-border-radius:($radius);
+ border-radius: $radius;
+}
+@mixin box-sizing($border)
+{
+-webkit-box-sizing:($border);
+-moz-box-sizing:($border);
+-ms-box-sizing:($border);
+-o-border-radius:($border);
+box-sizing: $border;
+}
+
+@mixin transition($transition)
+{
+	-webkit-transition:($transition);
+	-moz-transition:($transition);
+	-o-transition:($transition);
+	-ms-transition:($transition);
+	transition: ($transition);
+}
+@mixin transform($transform)
+{
+	transform:($transform);
+	-webkit-transform:($transform);
+	-o-transform:($transform);
+	-ms-transform:($transform);
+	-moz-transform:($transform);
+}
+@mixin animation($animation)
+{
+	animation: ($animation);
+	-o-animation: ($animation);
+	-webkit-animation: ($animation);
+	-ms-animation: ($animation);
+	-moz-animation: ($animation);
+}
+@mixin animation-delay($animation-delay)
+{
+	animation-delay: ($animation-delay);
+	-o-animation-delay: ($animation-delay);
+	-webkit-animation-delay: ($animation-delay);
+	-ms-animation-delay: ($animation-delay);
+	-moz-animation-delay: ($animation-delay);
+}
+@mixin animation($animation)
+{
+	animation: ($animation);
+	-o-animation: ($animation);
+	-webkit-animation: ($animation);
+	-ms-animation: ($animation);
+	-moz-animation: ($animation);
+}
+
+
+@mixin filter($filter)
+{
+	filter: ($filter);
+	-moz-filter: ($filter);
+	-o-filter: ($filter);
+	-webkit-filter: ($filter);
+	-ms-filter: ($filter);
+}
+
+@mixin overflow($overflow)
+{
+	overflow: ($overflow);
+	-moz-overflow: ($overflow);
+	-o-overflow: ($overflow);
+	-webkit-overflow: ($overflow);
+	-ms-overflow: ($overflow);
+}

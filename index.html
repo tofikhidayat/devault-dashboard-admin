@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>admin|syclops.corp</title>
+<link rel="stylesheet" type="text/css" href="asset/css/main.style.css">
+<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="asset/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="asset/css/main.style.css">
+<link rel="stylesheet" type="text/css" href="asset/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" type="text/css" href="asset/css/main.style.css">
+<link rel="stylesheet" type="text/css" href="asset/css/main.animate.css">
+<link rel="stylesheet" type="text/css" href="asset/css/clue.css">
+<script type="text/javascript" src="asset/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+
+
+
+<!--
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+-->
+</head>
+<body class="ov-h" id="body">
+			<!--------------------section------------------->
+
+			<header class=" ov-h header  white bg_header" id="header"  style="min-height: 54px;">
+			<div id="header"  style="position: absolute; width: 100%; height:auto; z-index: 999999999999999999999999; "  class="bg_header">
+				<div class="pull-left m-0p">
+						<div id="side-header" class="  sederfull1  bg_header">
+							<div class="pull-left ov-h bg-black-a p-0 pb-20 logo" style="max-height: 54px; height: 54px; overflow: hidden;">
+								<img class="img-circle pull-left icon" src="asset/img/icon.png" style="margin-top: 4px; margin-left: -04px;">
+								<span class=" icon-text  left-title1 pull-left uppercase show1">syclops</span>
+							</div>
+							
+						</div>	
+				</div>
+				<div class="pull-left">
+					
+					<div class="pull-left pl-20 " id="button-left">
+						 <button class="btn"  onclick="closeleft()" id="close_left"><i class="ion-navicon-round button-show"></i></button>   
+			         	<button class="btn "  onclick="openleft() " id="show_left"><i class="ion-navicon-round button-show"></i></span></button>  
+					</div>
+				</div>
+				 <div class="pull-right f-r white pt-10" >
+			           	  <span class="fa fa-envelope-o icon-top"></span>
+			              <span class="fa fa-bell-o icon-top"></span>
+			              <span class="fa fa-flag-o icon-top"></span>
+			              <img class=" img-circle admin-top p-05" src="asset/img/admin.svg">
+			              <span class="online-user ">administrator</span>
+			               <div class="pull-right " style="padding-right: 10px;">
+			             <button class="btn"  onclick="closeright()" id="close_right"><span class="fa fa-gears icon-top" ></span></button>   
+			         	<button class="btn "  onclick="openright() " id="show_right"><span class="fa fa-gears icon-top" ></span></button>      
+			           
+			               </div>   
+     			</div>
+			</header>
+<div id="left-sider" class="leftside sederfull pull-left white ov-h ">
+	<aside class="ov-h m-0 p-0">
+	
+
+		<div class="container-fluid p-0">
+			<div class="admin p-0 pt-10 pb-10 ">
+				<img class="img-circle pull-left p-0 m-0 full" id="admin" src="asset/img/admin.svg">
+				<h6 class="admin-title uppercase m-0 pt-10 pl-60 left-title">administrator</h6>
+				<span class="m-0 p-0 pl-10 left-title " ><i class="fa fa-circle text-green"></i> online</span>
+			</div>
+		</div>
+
+	<div class="container-fluid m-0 p-0 p-05 ov-h">
+		<div class="search p-0 left-title">
+			<form action="#" method="get">
+				<input type="text" name="search" placeholder="Search..." class="search-bar p-0 m-0">
+				<button class="ion-ios-search-strong btn " type="submit"></button>		
+			</form>
+		</div>
+	</div>
+
+
+
+		<div class="navbar-title left-title">
+			<div class="bg-black-a container-fluid p-05">
+			<span class="uppercase">main navigation</span>
+		</div>
+		</div>
+
+<div class="navbar-left m-0 p-0">
+	<nav class="">
+		<ul  class="m-0 p-0 ">
+			<li class="active">
+					<i class=" text-left pull-left">
+						<img src="asset/img/dashboard.png">
+					</i>
+					<span class="pull-left left-title">Dashboard</span>
+			</li>
+			<li class="">
+					<i class="ion-ios-browsers-outline text-left pull-left"></i>
+					<span class="pull-left left-title ">Layout option</span>
+			</li>
+						<li class="">
+					<i class="text-left pull-left">
+						<img src="asset/img/widget.png">
+					</i>
+					<span class="pull-left left-title ">Widget</span>
+			</li>
+						<li class="">
+					<i class=" text-left pull-left">
+						<img src="asset/img/chart.png">
+					</i>
+					<span class="pull-left left-title ">Chart</span>
+			</li>
+						<li class="">
+					<i class="pull-left">
+						<img src="asset/img/Design.png">
+					</i>
+					<span class="pull-left left-title ">UI element</span>
+			</li>
+						<li class="">
+					<i class=" text-left pull-left">
+						<img src="asset/img/form.png">
+					</i>
+					<span class="pull-left left-title ">Form</span>
+			</li>
+						<li class="">
+					<i class=" text-left pull-left">
+						<img src="asset/img/calendar.png">
+					</i>
+					<span class="pull-left left-title ">Calendar</span>
+			</li>
+						<li class="">
+					<i class=" text-left pull-left">
+						<img src="asset/img/table.png">
+					</i>
+					<span class="pull-left left-title">Table</span>
+			</li>
+						<li class="">
+					<i class=" text-left pull-left">
+						<img src="asset/img/Mail.png">
+					</i>
+					<span class="pull-left left-title ">Mailbox</span>
+			</li>
+			<li class="">
+					<i class="text-left pull-left">
+						<img src="asset/img/documenttation.png">
+					</i>
+					<span class="pull-left left-title  ">DOcumentation</span>
+			</li>
+
+		</ul>
+	</nav>
+	<div class="container-fluid bg-black-a label-nav uppercase p-05 left-title" style="padding-right: 150px;">
+		labels
+	</div >
+	<div class="labels">
+	<nav>
+		<ul class="p-0">
+			<li class="">
+					<i class="fa fa-circle-o text-red text-left pull-left"></i>
+					<span class="pull-left left-title">important</span>
+			</li>
+			<li class="">
+					<i class="fa fa-circle-o text-yellow text-left pull-left"></i>
+					<span class="pull-left left-title">warning</span>
+			</li>
+			<li class="">
+					<i class="fa fa-circle-o text-blue text-left pull-left"></i>
+					<span class="pull-left left-title ">information</span>
+			</li>
+			<li class="">
+					<i class="fa fa-circle-o text-green text-left pull-left"></i>
+					<span class="pull-left left-title ">granted</span>
+			</li>
+			
+		</ul>
+	</nav>
+
+	</div>
+
+</div>
+
+	
+	</aside>
+
+</div>
+
+
+<section  id="content-wrapper" class="ov-h content-wrapper  marginfull">
+
+			<section class=" ov-h container-fluid" style="min-width: 260px; padding-left: 0px" >
+
+				<div class="p-05 ov-h b-b">
+							<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 p-10">
+								<div class="trafict">
+									<div class="info bg-aqua">
+										<i class="ion ion-ios-gear-outline content-center"></i>			
+									</div>
+									<div class="info-box p-10 pl-20">
+										<div>
+										<span class="info-box-text pl-10">90%</span>
+									
+									</div>
+									<div >
+										<span class="info-box-number pl-10">cpu TRAFICT</span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 p-10">
+								<div class="trafict">
+									<div class="infog bg-red ">
+										<i class=" content-center">
+											<img src="asset/img/g+.svg">
+										</i>						
+									</div>
+									<div class="info-box p-10 pl-20">
+										<div>
+										<span class="info-box-text pl-10">70.000</span>
+									
+									</div>
+									<div >
+										<span class="info-box-number  pl-10">like</span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 p-10">
+								<div class="trafict">
+									<div class="info bg-green">
+										<i class="ion ion-ios-cart-outline content-center"></i>			
+									</div>
+									<div class="info-box p-10 pl-20">
+										<div>
+										<span class="info-box-text pl-10">700</span>
+									
+									</div>
+									<div >
+										<span class="info-box-number  pl-10">sale</span>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 p-10">
+								<div class="trafict">
+									<div class="info bg-orange">
+										<i class="ion ion-ios-people-outline content-center"></i>			
+									</div>
+									<div class="info-box p-10 pl-20">
+										<div>
+										<span class="info-box-text pl-10">65000</span>
+									
+									</div>
+									<div >
+										<span class="info-box-number  pl-10">new member</span>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+
+						<!--------------------------------end trafict----------------------->
+
+						<!---------------------------------moutly--------------------------->
+						<div class="box">
+			            <div class="box-header with-border">
+			              <span class="title-header text-left">Mountly recapt report</span>
+
+			              <div class="box-tools pull-right">
+			                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+			                </button>
+			                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+			              </div>
+			            </div>
+			            <div class="box-body">
+			              <div class="chart">
+			               <div class="moutly bg-white p-0 m-0">
+			       
+			          <div class="container-fluid ov-h p-10">
+			            <div class="row">
+			              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ">
+			                  <div class="box-body">
+			                    <div class="chart1">
+			                      <canvas id="areaChart" style="height:100%; width :100%; max-height: 300px; min-width: 100%; " class="pb-10" ></canvas>
+			                    </div>  
+			                  </div>
+
+			              </div>
+			              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 p-0 ">
+			                <h1 class="title text-center">Goal competition</h1>
+			                <div class="container-fluid">
+			                  <div class="product pt-20">
+			                    <label class="text-left m-0 p-0">add product to chart</label>
+			                    <span class="text-right pull-right"><b>160</b>/200</span>
+			                    <div class="bg-grey product-chart">
+			                      <div class="product-progress product-progress1 bg-aqua"></div>
+			                    </div>
+			                  </div>
+			                  <div class="product pt-20">
+			                    <label class="text-left m-0 p-0" >add product to chart</label>
+			                    <span class="text-right pull-right"><b>160</b>/200</span>
+			                    <div class="bg-grey product-chart">
+			                      <div class="product-progress product-progress2 bg-red"></div>
+			                    </div>
+			                  </div>
+			                  <div class="product pt-20">
+			                    <label class="text-left m-0 p-0">add product to chart</label>
+			                    <span class="text-right pull-right"><b>160</b>/200</span>
+			                    <div class="bg-grey product-chart">
+			                      <div class="product-progress product-progress3 bg-green"></div>
+			                    </div>
+			                  </div>
+			                  <div class="product pt-20">
+			                    <label class="text-left m-0 p-0">add product to chart</label>
+			                    <span class="text-right pull-right"><b>160</b>/200</span>
+			                    <div class="bg-grey product-chart">
+			                      <div class="product-progress product-progress4 bg-orange"></div>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="border-space"></div>
+			          <div class="row pt-10 pb-10">
+			            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 total">
+			           	 <h5 class="text-center text-green"><i class="fa fa-caret-up">20%</i></h5>
+				              <h6 class="text-center">$35,210.43</h6>
+				              <h6 class="text-center upercase">TOTAL REVENUE</h6>
+			            </div>
+
+			            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 total">
+			            <h5 class="text-center text-orange"><i class="fa fa-caret-up">20%</i></h5>
+			              <h6 class="text-center">$35,210.43</h6>
+			              <h6 class="text-center upercase">TOTAL REVENUE</h6>
+			            </div>
+			            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 total">
+			            <h5 class="text-center text-red"><i class="fa fa-caret-up">20%</i></h5>
+			              <h6 class="text-center">$35,210.43</h6>
+			              <h6 class="text-center upercase">TOTAL REVENUE</h6>
+			            </div>
+			            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 total">
+			            <h5 class="text-center text-blue"><i class="fa fa-caret-up">20%</i></h5>
+			              <h6 class="text-center">$35,210.43</h6>
+			              <h6 class="text-center upercase">TOTAL REVENUE</h6>
+			            </div>
+
+
+			            </div>
+			            
+			        
+			      </div>
+			              </div>
+			            </div>
+			             
+			          </div>
+
+						<div class="recently ">
+							<div class="">
+								<div class="row">
+				<!-------------------------- RECENTLY ---------------------------------->
+
+
+									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+										<div class="box">
+								            <div class="box-header with-border">
+								              <span class="title-header text-left">Recently added product</span>
+
+								              <div class="box-tools pull-right">
+								                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+								                </button>
+								                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+								              </div>
+								            </div>
+								            <div class="box-body">
+								              <div class="bg-white">
+								              <div class="product-content">
+								                <div class="product-action pb-15 pt-10">
+								                <div class="container-fluid  ">
+								                  <img class="pull-left pt-10" src="asset/img/alt.svg">
+								                    <div class="pl-60">
+								                      <h4 class="product-label ">SAMSUNG </h4>
+								                    <h4 class="product-info">samsung tv 32 inc led</h4>
+								                    </div>
+								                </div>
+								                </div>
+								                <div class="border-space"></div>
+								                <div class="product-action pb-15 pt-10">
+								                <div class="container-fluid">
+								                  <img class="pull-left pt-10" src="asset/img/alt.svg">
+								                    <div class="pl-60">
+								                      <h4 class="product-label ">SAMSUNG </h4>
+								                    <h4 class="product-info">samsung tv 32 inc led</h4>
+								                    </div>
+								                </div>
+								                </div>
+								                <div class="border-space"></div>
+								                <div class="product-action pb-15 pt-10">
+								                <div class="container-fluid">
+								                  <img class="pull-left pt-10" src="asset/img/alt.svg">
+								                    <div class="pl-60">
+								                      <h4 class="product-label ">SAMSUNG </h4>
+								                    <h4 class="product-info">samsung tv 32 inc led</h4>
+								                    </div>
+								                </div>
+								                </div>
+								                <div class="border-space"></div>
+								                <div class="product-action pb-15 pt-10">
+								                <div class="container-fluid">
+								                  <img class="pull-left pt-10" src="asset/img/alt.svg">
+								                    <div class="pl-60">
+								                      <h4 class="product-label ">SAMSUNG </h4>
+								                    <h4 class="product-info">samsung tv 32 inc led</h4>
+								                    </div>
+								                </div>
+								                </div>
+								              </div>
+								            </div>
+								            </div>
+								           
+								             
+								          </div>
+									</div>
+			<!--------------------------END RECENTLY---------------------------------->
+
+
+
+			<!--------------------------BROWSER------------------------------------>
+									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+											<div class="box">
+								            <div class="box-header with-border">
+								              <span class="title-header text-left">Browser usage</span>
+
+								              <div class="box-tools pull-right">
+								                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+								                </button>
+								                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+								              </div>
+								            </div>
+								            <div class="box-body row">
+								              <div class="chart">
+								               <div class="row p-0 m-0 ">
+								                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 p-0 pt-10" style="min-height: 100px;">
+								                  <canvas id="pieChart" class="p-0 m-0" style=" width: 100%; height: 100%; min-height: 150px;"></canvas>
+								                </div>
+								                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-0 pt-20 browser row">
+								                  <div class="col-lg-12 col-md-12  m-0 p-0">
+								                    <span><i class="fa fa-circle-o text-red m-0 p-0"></i><span> chrome</span></span>
+								                  </div>
+								                  <div class="col-lg-12 col-md-12  m-0 p-0">
+								                    <span><i class="fa fa-circle-o text-green "></i><span> IE</span></span>
+
+								                  </div>
+								                  <div class="col-lg-12 col-md-12  m-0 p-0">
+								                    <span><i class="fa fa-circle-o text-orange "></i><span> Firefox</span></span>
+
+								                  </div>
+								                  <div class="col-lg-12 col-md-12  m-0 p-0">
+								                    <span><i class="fa fa-circle-o text-aqua "></i><span> Safari</span></span>
+
+								                  </div>
+								                  <div class="col-lg-12 col-md-12 m-0 p-0">
+								                    <span><i class="fa fa-circle-o text-blue "></i><span> Opra</span></span>
+
+								                  </div>
+								                  <div class="col-lg-12 col-md-12  m-0 p-0">
+								                    <span><i class="fa fa-circle-o text-grey "></i><span> Navigator</span></span>
+								                    
+								                  </div>
+								                </div>
+
+								              </div>
+								            <div class="container-fluid">
+								            	
+								            	 <div class="row  container-fluid ov-h">
+								            	 	 <div class="border-space"></div>
+								              <div class="col-12 container-fluid">
+								                <div class="pt-20 pb-20"><span><span class="text-left float-left">united state of america</span> <span class="pull-right"">12%</span><i class="fa fa-angle-up text-right pull-right""></i> </span></div>
+								              </div>
+								              <div class="border-space m-0 p-0"></div>
+								              <div class="col-12 container-fluid">
+								                <div class="pt-20 pb-20"><span><span class="text-left float-left">united state of america</span> <span class="pull-right"">12%</span><i class="fa fa-angle-up text-right pull-right""></i> </span></div>
+								              </div>
+								              <div class="border-space m-0 p-0"></div>
+								              <div class="col-12 container-fluid">
+								                <div class="pt-20 pb-40"><span><span class="text-left pull-left">united state of america</span> <span class="pull-right">12%</span><i class="fa fa-angle-up pull-right"></i> </span></div>
+								              </div>
+								            </div>
+								            </div>
+								              </div>
+								            </div>
+
+								          </div>
+								</div>
+			<!-------------------------------END BROWSER------------------------------->
+
+			<!----------------------------- INVENTORY--------------------------------->
+
+
+									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 b-b white">
+										<div class="container-fluid  m-0 ov-h">
+											<div class="inventory bg-orange row">
+												<div class="pull-left bg-black-inverse col-3">
+													<i class="ion ion-ios-pricetag-outline"></i>
+												</div>
+												<div class="ov-h col-9" >
+													<h5 class="text-left pl-05">inventory</h5>
+														<h6 class="text-left p-0 m-0 pl-05"><b>500</b></h6>
+														<div class="progres bg-grey p-0 m-0">
+														<div class="product-progressa progresbar bg-white"></div>
+														
+														</div>
+														<span class="pl-05">50% increase now</span>
+												</div>
+											</div>
+
+												<div class="inventory bg-green row">
+												<div class="pull-left bg-black-inverse col-3">
+													<i class="ion ion-ios-pricetag-outline"></i>
+												</div>
+												<div class="ov-h col-9" >
+													<h5 class="text-left pl-05">inventory</h5>
+														<h6 class="text-left p-0 m-0 pl-05"><b>500</b></h6>
+														<div class="progres bg-grey p-0 m-0">
+														<div class="product-progressb  progresbar bg-white"></div>
+														
+														</div>
+														<span class="pl-05">50% increase now</span>
+												</div>
+											</div>
+
+												<div class="inventory bg-red row">
+												<div class="pull-left bg-black-inverse col-3">
+													<i class="ion ion-ios-pricetag-outline"></i>
+												</div>
+												<div class="ov-h col-9" >
+													<h5 class="text-left pl-05">inventory</h5>
+														<h6 class="text-left p-0 m-0 pl-05"><b>500</b></h6>
+														<div class="progres bg-grey p-0 m-0">
+														<div class="product-progressc progresbar bg-white"></div>
+														
+														</div>
+														<span class="pl-05">50% increase now</span>
+												</div>
+											</div>
+
+												<div class="inventory bg-aqua row">
+												<div class="pull-left bg-black-inverse col-3">
+													<i class="ion ion-ios-pricetag-outline"></i>
+												</div>
+												<div class="ov-h col-9" >
+													<h5 class="text-left pl-05">inventory</h5>
+														<h6 class="text-left p-0 m-0 pl-05"><b>500</b></h6>
+														<div class="progres bg-grey p-0 m-0">
+														<div class="product-progressd progresbar bg-white"></div>
+														
+														</div>
+														<span class="pl-05">50% increase now</span>
+												</div>
+											</div>
+
+										</div>
+										
+
+
+										<!-----------------------------END INVENTORY--------------------------------->
+									</div>
+								</div>
+							</div>
+						</div>
+
+<!----------------------rigt------------------->
+						
+
+			</section>
+</section>
+
+			<footer id="footer" class="containerfluid bg-white pt-10 pb-10 ov-h footerfull m-0	p-0">
+				<h6 class="foter-text"> copyright &copy2017 <strong class="text-aqua ">creative.inc</strong> allright reserved</h6>
+			</footer>
+			<div class=" white right-sider" id="right-sider" >
+	<div class="overlay">
+		<div class="container-fluid">
+		<nav class="navbar">
+			<div class="labels-r pt-10 pb-10">
+				<span>Layout Option</span>
+			</div>
+			<div class="body-r">
+
+				<div class=" layout1 container-fluid pl-0 " style="padding-right: 25px;">
+					<span class="pull-left p-0 m-0">Boxed layout </span>
+					<input type="checkbox" name="" id="boxed" onclick="boxed()" class="pull-right ">
+				</div>
+				<div class=" layout1 container-fluid pl-0 " style="padding-right: 25px;">
+					<span class="pull-left p-0 m-0">Fixed left side </span>
+					<input type="checkbox" name="" id="fixed-left" onclick="fixed_left()" class="pull-right ">
+				</div>
+				<div class=" layout1 container-fluid pl-0 " style="padding-right: 25px;">
+					<span class="pull-left p-0 m-0">Fixed right side </span>
+					<input type="checkbox" name="" id="fixed-right" onclick="fixed_right()" class="pull-right ">
+				</div>
+				<div class=" layout1 container-fluid pl-0 " style="padding-right: 25px;">
+					<span class="pull-left p-0 m-0">Fixed top navbar</span>
+					<input type="checkbox" name="" id="fixed-top" onclick="fixed_top()" class="pull-right ">
+				</div>
+
+
+				<div class="pt-10 pb-10"><span class="header.skin">Header skin color</span></div>
+
+
+				<div class="layout container-fluid">
+					<div class="row pt-10">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="devault()" id="devault"></div>
+							<span class="palete-title">devault</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="red()" id="red"></div>
+							<span class="palete-title">red</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="green()" id="green"></div>
+							<span class="palete-title">green</span>
+						</div>
+						
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="purple()" id="purple"></div>
+							<span class="palete-title">purple</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="yellow()" id="yellow_a"></div>
+							<span class="palete-title">yellow</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="orange()" id="orange"></div>
+							<span class="palete-title">orange</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="blue()" id="blue"></div>
+							<span class="palete-title">blue</span>
+						</div>
+						
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="lightpurple()" id="lightpurple"></div>
+							<span class="palete-title">light purple</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="lightgreen()" id="lightgreen"></div>
+							<span class="palete-title">light green</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="lightred()" id="lightred"></div>
+							<span class="palete-title">light red</span>
+						</div>
+						
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="lightorange()" id="lightorange"></div>
+							<span class="palete-title">light orange</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-05">
+							<div class="palete" onclick="lightblue()" id="lightblue"></div>
+							<span class="palete-title">light blue</span>
+						</div>
+
+						
+
+						
+
+
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</nav>
+		</div>
+	</div>
+</div>
+			
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="asset/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="asset/chart/chart.js"></script>
+<script type="text/javascript" src="asset/js/chart.js"></script>
+<script type="text/javascript" src="asset/js/admin.js"></script>
+<script type="text/javascript" src="asset/js/funtion.js"></script>
+
+<script type="text/javascript">
+
+</script>
+<style type="text/css">
+
+</style>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

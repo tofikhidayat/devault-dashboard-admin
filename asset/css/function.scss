@@ -1,0 +1,130 @@
+
+
+
+	.hide
+	{
+		width: 0px;
+		overflow:hidden;
+	}
+	.show
+	{
+		width: auto;
+		top: 0;
+	}
+
+
+	#close_left
+	{
+		display: block;
+	}
+	#show_left
+	{
+		display: none;
+	}
+
+
+
+	
+
+	.show_size
+	{
+		max-width: 100%;
+		width: 100%;
+		min-width: 20px;
+		overflow: hidden;
+		transition: 5s ease;
+	}
+
+	.hide_size
+	{
+		max-width: 40px;
+		width: 40px;
+		overflow: hidden;
+		transition:5s ease;
+	}
+
+	.full
+	{
+		max-width: 45px;
+		margin-left: 7px;
+	}
+	.mini
+	{
+		max-width: 30px;
+		margin-left: 4px;
+	}
+
+
+	.sederfull
+	{
+		width: 200px;
+		max-width: 200px;
+		min-width: 200px;
+		@include transition(.5s ease);
+		@includde overflow(hidden);
+
+	}
+	.sedermini
+	{
+		max-width: 40px;
+		width: 40px;
+		min-width:40px;
+		@include transition(.5s ease);
+		@includde overflow(hidden);
+	}
+
+
+	.marginfull
+	{
+		margin-left: 220px;
+		@include transition(.5s ease);
+		@includde overflow(hidden);
+	}
+	.marginmini
+	{
+	margin-left: 60px;
+		@include transition(.5s ease);
+		@includde overflow(hidden);	
+	}
+
+
+	.footerfull
+	{
+		margin-left: 200px;
+		@include transition(.5s ease);
+		@includde overflow(hidden);
+	}
+	.footermini
+	{
+	margin-left: 40px;
+		@include transition(.5s ease);
+		@includde overflow(hidden);	
+	}
+
+
+@media screen and (max-width: 768px)
+{
+	.online-user
+	{
+		display: none;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
